@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration page</title>
+</head>
+<body>
+    <h1>Registration page</h1>
+    <div class="block">
+
+    <form class="form" style="text-align: left;">
+        <h1>sign up</h1>
+        <div class="form1">
+        <input type="text" id="in" class="firstname" name="firstname" required="required" />
+        <span>Firstname</span>
+        <div id="firsterror"></div>
+    </div>
+    <div class="form1">    
+        <input type="text" id="in" class="lastname" name="lastname" required="required"/>
+    <span>Lastname</span>
+    <div id="lasterror"></div>
+</div>
+        <div class="form1">
+        <input type="email" id="in" class="email" name="email" required="required"/>
+        <span>Email</span>
+        <div id="emailerror"></div>
+    </div>
+        <div class="form1">
+        <input type="password" id="in" class="password" name="password" required="required"/>
+        <span>Password</span>
+        <div id="passworderror"></div>
+    </div><br>
+        <div class="form1">
+        <input type="password" id="in" class="confirmpassword" name="password" required="required"/>
+        <span>confirm Password</span>
+        <div id="cpassworderror"></div>
+    </div><br>
+        <button onclick="register()">sign up</button>
+        <h3>Already have account?<a href='#'>sign in</a></h3>
+        </form>
+        </div>
+        <script src="form.js"></script>
+</body>
+</html>
